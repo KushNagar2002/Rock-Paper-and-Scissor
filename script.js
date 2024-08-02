@@ -71,7 +71,7 @@ function showResult(score, playerChoice, computerChoice) {
   }
 
   hands.innerText = `🧔 ${playerChoice} vs 🤖 ${computerChoice}`;
-  playerScore.innerText = `Score: ${score}`;
+  playerScore.innerText = `${Number(playerScore.innerText) + score}`;
 }
 
 // ** Calculate who won and show it on the screen **
